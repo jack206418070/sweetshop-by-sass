@@ -1,0 +1,136 @@
+/* btn set */
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: $font-s;
+    cursor: pointer;
+    font-weight: bold;
+    &:hover{
+        color: $thirdary;
+        background-color: $f-color-primary;
+    }
+}
+
+.btn-primary{
+    background-color: $primary;
+}
+
+.btn-secondary{
+    background-color: $secondary;
+}
+
+.btn-thirdary{
+    background-color: $thirdary;
+}
+
+
+
+
+/* card set */
+
+
+.card{
+    border: 1px solid #EAF0ED;
+    position: relative;
+    @include mobile{
+        margin: 10px 0;
+    }
+    .card-img{
+        height: 315px;
+        background-repeat:no-repeat;
+        background-position: center center;
+        background-size: cover;
+        @include mobile{
+            height: 250px;
+        }
+    }
+
+    .card-icon-heart{
+        position: absolute;
+        font-size: $font-s;
+        color: $primary;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        i{
+            &:hover{
+                font-weight: bold;
+            }
+        }   
+    }
+
+    .card-tag{
+        position: absolute;
+        background-color: $primary;
+        top: 0;
+        left: 20px;
+        padding: 15px 10px;
+        color: $white;
+        letter-spacing: 5px;
+        text-align: center;
+        font-size: $font-base;
+        writing-mode: vertical-lr;
+    }
+
+    .card-title{
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        p{
+            max-width: 50%;
+            flex: 0 0 50%;
+            font-size: $font-s;
+            @media (max-width: 1024px) {
+                font-size: $font-base;
+                font-weight: bold;
+            }
+            @include pad{
+                font-size: $font-base;
+                max-width: 100%;
+                flex: 0 0 100%;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-bottom: 1px solid $thirdary;
+            }
+            @include mobile{
+                max-width: 50%;
+                flex: 0 0 50%;
+                font-size: $font-s;
+                border-bottom: 0;
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+        }
+    }
+}
+
+
+/* pagination set */
+
+.pagination{
+    .pagination-item{
+        display: flex;
+        justify-content: flex-end;
+        @include mobile{
+            justify-content: center;
+        }
+        a{
+            display: block;
+            padding: 16px 20px;
+            border-top: 2px solid $thirdary;
+            border-bottom: 2px solid $thirdary;
+            border-right: 1px solid $thirdary;
+            border-left: 1px solid $thirdary;
+            font-size: $font-base * 1.2;
+            &:hover,&.active{
+                background-color: $primary;
+                color: $white;
+                i{
+                    color: $white;
+                }
+            }
+        }
+    }
+}

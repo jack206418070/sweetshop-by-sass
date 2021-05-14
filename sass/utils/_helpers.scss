@@ -1,0 +1,298 @@
+$helper-sizes:(
+    'xxs': 5px,
+    'xs': 10px,
+    's': 20px,
+    'm': 35px,
+    'l': 50px,
+    'xl': 100px
+);
+
+$helper-flex:(
+    'center':  center,
+    'between': space-between,
+    'around': space-around,
+    'start': flex-start,
+    'end': flex-end,
+    'stretch': stretch
+);
+
+
+/* margin set */
+
+@each $key, $value in $helper-sizes{
+    .mt-#{$key}{
+        margin-top: $value;
+    }
+    .mb-#{$key}{
+        margin-bottom: $value !important;
+    }
+    .mr-#{$key}{
+        margin-right: $value;
+    }
+    .ml-#{$key}{
+        margin-left: $value;
+    }
+    .my-#{$key}{
+        margin-top: $value !important;
+        margin-bottom: $value !important;
+    }
+    .mx-#{$key}{
+        margin-right: $value;
+        margin-left: $value;
+    }
+}
+
+.m-auto{
+    margin: auto;
+}
+
+.mx-auto{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.mr-auto{
+    margin-right: auto;
+}
+
+.mb-0{
+    margin-bottom: 0;
+}
+
+/* padding set */
+
+@each $key, $value in $helper-sizes{
+    .pt-#{$key}{
+        padding-top: $value;
+    }
+    .pb-#{$key}{
+        padding-bottom: $value;
+    }
+    .pr-#{$key}{
+        padding-right: $value;
+    }
+    .pl-#{$key}{
+        padding-left: $value;
+    }
+    .py-#{$key}{
+        padding-top: $value;
+        padding-bottom: $value;
+    }
+    .px-#{$key}{
+        padding-left: $value;
+        padding-right: $value;
+    }
+    .p-#{$key}{
+        padding: $value;
+    }
+}
+
+.py-7{
+    padding-bottom: 70px;
+    padding-top: 70px;
+}
+.px-3{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+/* dispay set */
+.d-block{
+    display: block;
+}
+
+
+.d-flex{
+    display: flex;
+    &.flex-wrap{
+        flex-wrap: wrap;
+    }
+}
+
+@each $key, $value in $helper-flex {
+    .jy-content-#{$key}{
+        justify-content: $value;
+    }
+    .align-items-#{$key}{
+        align-items: $value;
+    }
+    .align-self-#{$key}{
+        align-self: $value;
+    }
+}
+
+.flex-dir-col{
+    flex-direction: column;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+
+.flex-md-col-reverse{
+    @include mobile{
+        flex-direction: column-reverse;
+    }
+}
+
+
+
+/* text set */
+
+.text-{
+    &right{
+        text-align: right;
+    }
+    &center{
+        text-align: center;
+    }
+    &left{
+        text-align: left;
+    }
+}
+
+
+/* text set */
+
+.text-c-{
+    &primary{
+        color: $f-color-primary;
+    }
+    &secondary{
+        color: $f-color-secondary;
+    }
+    &white{
+        color: white;
+    }
+}
+
+.text-ver-lr{
+    writing-mode: vertical-lr;
+}
+.text-ver-rl{
+    writing-mode: vertical-rl;
+}
+
+
+
+
+/* bg-color */
+.bg-{
+    &primary{
+        background-color: $primary;
+    }
+    &secondary{
+        background-color: $secondary;
+    }
+    &thirdary{
+        background-color: $thirdary;
+    }
+}
+
+
+/* border-set */
+
+.border{
+    border: 1px solid $thirdary;
+}
+
+.border-r{
+    border-right: 1px solid $thirdary;
+}
+
+.border-b{
+    border-bottom: 2px solid $thirdary;
+}
+.border-b-white{
+    border-bottom: 2px solid $white;
+}
+
+
+
+/* font-style */
+.f-w-bold{
+    font-weight: bold;
+}
+
+.f-w-600{
+    font-weight: 600;
+}
+
+
+
+/* width height set */
+.w-100{
+    width: 100% !important;
+}
+.h-100{
+    height: 100% !important;
+}
+
+
+
+/* text address set */
+
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-left{
+    text-align: left;
+}
+
+/* postion */
+.p-relative{
+    position: relative;
+}
+
+.p-absolute{
+    position: absolute;
+}
+
+
+/* z-index */
+
+.zindex-100{
+    z-index: -100;
+}
+
+.zindex100{
+    z-index: 100;
+}
+
+.zindex1000{
+    z-index: 1000;
+}
+
+.zindex-1000{
+    z-index: -1000;
+}
+
+
+/* link pointer */
+
+.link-pointer{
+    cursor: pointer;
+}
+
+
+
+/* f-size set */
+
+.f-size-s{
+    font-size: $font-base * 1.25;
+}
+
+.f-size-m{
+    font-size: $font-base * 1.5;
+}
+
+.f-size-l{
+    font-size: $font-base * 2;
+}
