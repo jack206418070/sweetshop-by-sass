@@ -46,7 +46,7 @@ a{
         max-width: 20%;
         flex: 0 0 20%;
         a{
-            @include imgReplaceText('../../assets/logo-all-dark.svg');
+            @include imgReplaceText('../assets/logo-all-dark.svg');
             display: block;
             height: 100px;
             width: 100%;
@@ -118,7 +118,7 @@ a{
             -webkit-appearance: none;
             width: 90%;
             font-size: $font-m;
-            border: 0;
+            // border: 0;
             border-radius: 0;
             &:focus{
                 outline: none;

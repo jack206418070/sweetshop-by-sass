@@ -88,7 +88,7 @@
 
 @media screen and (max-width: 569px) {
   section {
-    margin: 0;
+    margin: 0 !important;
   }
 }
 
@@ -148,6 +148,7 @@ section .section-img__mobile {
 @media screen and (max-width: 569px) {
   section .section-img__mobile {
     display: block;
+    margin-top: -100px;
   }
 }
 /*# sourceMappingURL=index.css.map */
