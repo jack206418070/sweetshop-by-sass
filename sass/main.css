@@ -1427,11 +1427,10 @@ a {
 }
 
 .l-footer .l-footer-section-email input {
-  -webkit-appearance: none;
   width: 90%;
   font-size: 32px;
-  border: 2px solid #ffffff;
-  border-radius: 0;
+  border: 5px solid #ffffff;
+  border-radius: 5px 0 0 5px;
 }
 
 .l-footer .l-footer-section-email input:focus {
@@ -1443,6 +1442,7 @@ a {
   font-size: 24px;
   text-align: center;
   cursor: pointer;
+  border-radius: 0 5px 5px 0;
 }
 
 .l-footer .l-footer-section-email .send:hover {
