@@ -1400,7 +1400,7 @@ a {
 
 .l-footer .l-footer-section-title .l-footer-section-title__img {
   border-radius: 50%;
-  background-image: url(../../assets/logo-light.svg);
+  background-image: url(../assets/logo-light.svg);
   background-repeat: no-repeat;
   width: 40px;
   height: 40px;
@@ -1486,7 +1486,7 @@ a {
 }
 
 .l-footer .l-footer-section-info .l-footer-section-info__img {
-  background-image: url(../../assets/logotype-sm-dark.svg);
+  background-image: url(../assets/logotype-sm-dark.svg);
   background-repeat: no-repeat;
   height: 15%;
   background-size: auto;
@@ -1536,7 +1536,7 @@ a {
 }
 
 .l-footer .l-footer-section-copyright .l-footer-section-copyright__img {
-  background-image: url(../../assets/sm-今天是個吃甜點的好日子.svg);
+  background-image: url(../assets/sm-今天是個吃甜點的好日子.svg);
   background-repeat: no-repeat;
   background-size: auto;
   width: 20%;
