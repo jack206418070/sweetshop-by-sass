@@ -115,6 +115,7 @@ a{
         flex: 0 0 50%;
         position: relative;
         input{
+            -webkit-appearance: none;
             width: 90%;
             font-size: $font-m;
             border: 0;

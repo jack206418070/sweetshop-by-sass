@@ -1427,6 +1427,7 @@ a {
 }
 
 .l-footer .l-footer-section-email input {
+  -webkit-appearance: none;
   width: 90%;
   font-size: 32px;
   border: 0;
