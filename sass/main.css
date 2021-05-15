@@ -443,6 +443,10 @@ img {
   display: block;
 }
 
+.d-inline-block {
+  display: inline-block;
+}
+
 .d-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -606,6 +610,10 @@ img {
   color: white;
 }
 
+.text-c-secondary-dark {
+  color: #718b76;
+}
+
 .text-ver-lr {
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
@@ -629,6 +637,10 @@ img {
 
 .bg-thirdary {
   background-color: #EAF0ED;
+}
+
+.bg-white {
+  background-color: #ffffff;
 }
 
 /* border-set */
@@ -711,6 +723,10 @@ img {
 }
 
 /* f-size set */
+.f-size-xs {
+  font-size: 17.6px;
+}
+
 .f-size-s {
   font-size: 20px;
 }

@@ -102,6 +102,10 @@ $helper-flex:(
     display: block;
 }
 
+.d-inline-block{
+    display: inline-block;
+}
+
 
 .d-flex{
     display: flex;
@@ -166,6 +170,9 @@ $helper-flex:(
     &white{
         color: white;
     }
+    &secondary-dark{
+        color: darken($f-color-secondary, 10%);
+    }
 }
 
 .text-ver-lr{
@@ -188,6 +195,9 @@ $helper-flex:(
     }
     &thirdary{
         background-color: $thirdary;
+    }
+    &white{
+        background-color: $white;
     }
 }
 
@@ -284,6 +294,10 @@ $helper-flex:(
 
 
 /* f-size set */
+
+.f-size-xs{
+    font-size: $font-base * 1.1;
+}
 
 .f-size-s{
     font-size: $font-base * 1.25;
