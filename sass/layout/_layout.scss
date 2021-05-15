@@ -118,6 +118,7 @@ a{
             -webkit-appearance: none;
             width: 90%;
             font-size: $font-m;
+            border: 2px solid $white;
             // border: 0;
             border-radius: 0;
             &:focus{
