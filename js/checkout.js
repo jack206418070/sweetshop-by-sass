@@ -52,7 +52,7 @@ let stepBtn = document.querySelector('.js-step');
                     stepBtn.textContent = '確認結帳'
                     stepItem[stepCount].className = 'step-item__active';
                 }else if(stepCount == 3){
-                    window.location.href="http://127.0.0.1:5500/checkout-success.html"
+                    window.location.href="./checkout-success.html"
                 }
             }
         }
