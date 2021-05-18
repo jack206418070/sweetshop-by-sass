@@ -94,6 +94,9 @@ a{
 
 }
 .l-footer{
+    @include mobile{
+        margin-top: 0 !important;
+    }
     .l-footer-section-title{
         flex: 0 0 30%;
         .l-footer-section-title__img{

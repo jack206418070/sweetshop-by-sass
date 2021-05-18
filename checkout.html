@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sass/main.css" class="css">
+    <link rel="stylesheet" href="./sass/page/checkout.css" class="css">
+    <link href="./fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container l-header align-items-center p-relative">
+        <div class="row jy-content-between align-items-center">
+            <div class="menu-bar js-barControl">
+                <i class="fas fa-bars"></i>
+            </div>
+            <h1 class="l-header-logo">
+                <a href="index.html">logo</a>
+            </h1>
+            <ul class="l-header-menu d-flex align-items-center jy-content-end zindex1000 js-menu">
+                <li>
+                    <a href="index.html" class="py-s px-s f-w-600 text-c-primary">
+                        首頁
+                    </a>
+                </li>
+                <li>
+                    <a href="product.html" class="py-s px-s f-w-600 text-c-primary">
+                        甜點
+                    </a>
+                </li>
+                <li>
+                    <a href="login.html" class="py-s px-s f-w-600 text-c-primary">
+                        登入
+                    </a>
+                </li>
+            </ul>
+            <a href="cart.html" class="l-header-cart text-c-primary">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row jy-content-center">
+            <div class="col-md-6">
+                <div class="section-check bg-primary p-m">
+                    <div class="section-check-title">
+                        <div class="row align-items-center mb-s">
+                            <div class="col-6">
+                                <p class="f-size-l text-c-white f-w-bold">運送</p>
+                            </div>
+                            <div class="col-6">
+                                <div class="step-group d-flex jy-content-between">
+                                    <div class="step-item"></div>
+                                    <div class="step-item"></div>
+                                    <div class="step-item"></div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                    <form class="js-first-form">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label class="text-c-white f-w-600 f-size-s d-block mb-xxs" for="firstName">姓氏</label>
+                                    <input class= "form-control bg-thirdary" type="text" placeholder="王">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label class="text-c-white f-w-600 f-size-s d-block mb-xxs" for="lastName">名子</label>
+                                    <input class="form-control bg-thirdary" type="text" placeholder="小明">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label class="text-c-white f-w-600 f-size-s d-block mb-xxs" for="firstName">電話</label>
+                                    <input class="form-control bg-thirdary" type="text" placeholder="0912-345-678">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label class="text-c-white f-w-600 f-size-s d-block mb-xxs" for="firstName">地址</label>
+                                    <select class="form-control bg-thirdary" name="city" id="city">
+                                        <option value="台北市">台北市</option>
+                                        <option value="高雄市">高雄市</option>
+                                        <option value="台中市">台中市</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label class="text-c-primary f-w-600 f-size-s d-block mb-xxs" for="firstName">地址</label>
+                                    <select class="form-control bg-thirdary" name="city" id="city">
+                                        <option value="信義區">信義區</option>
+                                        <option value="大安區">大安區</option>
+                                        <option value="松山區">松山區</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <input class="form-control bg-thirdary" type="text" placeholder="幸福路 520 號">
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                    <form class="js-second-form">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label class="text-c-white f-w-600 f-size-s d-block mb-xxs" for="credit">信用卡卡號</label>
+                                    <input class= "form-control bg-thirdary" type="text" placeholder="9101-1102-1002-2541">
+                                </div>
+                            </div>
+                           
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label class="text-c-white f-w-600 f-size-s d-block mb-xxs" for="creditName">持卡人姓名</label>
+                                    <input class="form-control bg-thirdary" type="text" placeholder="王">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label class="text-c-primary f-w-600 f-size-s d-block mb-xxs">持卡人姓名</label>
+                                    <input class="form-control bg-thirdary" type="text" placeholder="小明">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label class="text-c-white f-w-600 f-size-s d-block mb-xxs" for="deadLine">有效期限</label>
+                                    <select class="form-control bg-thirdary" name="month" id="month">
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label class="text-c-primary f-w-600 f-size-s d-block mb-xxs">有效期限</label>
+                                    <select class="form-control bg-thirdary" name="year" id="year">
+                                        <option value="2021">2021</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2023">2023</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label class="text-c-white f-w-600 f-size-s d-block mb-xxs">背面末三碼</label>
+                                    <input class="form-control bg-thirdary" type="text" placeholder="123">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <form class="js-third-form">
+                        <div class="row js-recepit-ele">
+                            <div class="col-12 mb-s">
+                                <div class="section-check-receipt bg-primary border-white d-flex jy-content-between">
+                                    <div class="section-check-receipt-item text-c-white text-center f-size-xs f-w-bold py-s active">電子發票</div>
+                                    <div class="section-check-receipt-item text-c-white text-center f-size-xs f-w-bold py-s">郵寄發票</div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label class="text-c-white f-w-600 f-size-s d-block mb-xxs" for="email">電子郵件信箱</label>
+                                    <input class="form-control bg-thirdary" type="ema" placeholder="小明">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label class="text-c-white f-w-600 f-size-s d-block mb-xxs" for="comNunber">統一編號 (選填)</label>
+                                    <input class="form-control bg-thirdary" type="text" placeholder="81261515">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row js-recepit-mail">
+                            <div class="col-12 mb-s">
+                                <div class="section-check-receipt bg-primary border-white d-flex jy-content-between">
+                                    <div class="section-check-receipt-item text-c-white text-center f-size-xs f-w-bold py-s">電子發票</div>
+                                    <div class="section-check-receipt-item text-c-white text-center f-size-xs f-w-bold py-s active">郵寄發票</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label class="text-c-white f-w-600 f-size-s d-block mb-xxs" for="address">地址</label>
+                                    <select class="form-control bg-thirdary" name="city" id="city">
+                                        <option value="台北市">台北市</option>
+                                        <option value="高雄市">高雄市</option>
+                                        <option value="台中市">台中市</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <div class="checkbox-control d-flex jy-content-end mb-xs">
+                                        <input class="checkbox" type="checkbox"> 
+                                        <label class="text-c-white f-w-600 d-block ml-xs" for="check">同運貨地址</label>
+                                    </div>
+                                    <select class="form-control bg-thirdary" name="city" id="city">
+                                        <option value="信義區">信義區</option>
+                                        <option value="大安區">大安區</option>
+                                        <option value="松山區">松山區</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label class="text-c-white f-w-600 f-size-s d-block mb-xxs" for="comNunber">統一編號 (選填)</label>
+                                    <input class="form-control bg-thirdary" type="text" placeholder="81261515">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="btn btn-secondary px-m py-s js-step text-c-primary">下一步</div>
+            </div>
+            <div class="col-md-4">
+                <div class="section-list bg-white border-thirdary mb-s">
+                    <p class="section-list-title bg-thirdary  f-size-m f-w-bold text-c-secondary-dark text-center py-s">訂單摘要</p>
+                    <div class="section-list-body px-m">
+                        <p class="pt-s d-flex jy-content-between">
+                            <span class="text-c-secondary">小計</span>
+                            <span class="text-c-secondary">NT$ 2,700</span>
+                        </p>
+                        <p class="pt-xs d-flex jy-content-between">
+                            <span class="text-c-secondary">運費</span>
+                            <span class="text-c-secondary">NT$ 300</span>
+                        </p>
+                        <p class="py-s d-flex jy-content-between">
+                            <span class="f-size-s f-w-bold text-c-secondary-dark">總計</span>
+                            <span class="f-size-s f-w-bold text-c-secondary-dark">NT$ 3,000</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="section-list bg-white border-thirdary mb-s">
+                    <p class="section-list-title bg-thirdary  f-size-m f-w-bold text-c-secondary-dark text-center py-s">購物清單</p>
+                    <div class="section-list-body px-m">
+                        <ul>
+                            <li class="d-flex jy-content-between align-items-center my-s">
+                                <div class="section-list-body-img" style="background-image: url(https://bit.ly/2zBDAxX);"></div>
+                                <div class="section-list-body-text">
+                                    <p class="text-c-thirdary-dark mb-xxs">焦糖馬卡龍 (2)</p>
+                                    <p class="text-c-secondary-dark f-size-s f-w-600">NT$ 900</p>
+                                </div>
+                            </li>
+                            <li class="d-flex jy-content-between align-items-center my-s">
+                                <div class="section-list-body-img" style="background-image: url(https://bit.ly/2zKOP7w);"></div>
+                                <div class="section-list-body-text">
+                                    <p class="text-c-thirdary-dark mb-xxs">焦糖馬卡龍 (2)</p>
+                                    <p class="text-c-secondary-dark f-size-s f-w-600">NT$ 900</p>
+                                </div>
+                            </li>
+                            <li class="d-flex jy-content-between align-items-center my-s">
+                                <div class="section-list-body-img" style="background-image: url(https://bit.ly/2QvsT63);"></div>
+                                <div class="section-list-body-text">
+                                    <p class="text-c-thirdary-dark mb-xxs">焦糖馬卡龍 (2)</p>
+                                    <p class="text-c-secondary-dark f-size-s f-w-600">NT$ 900</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="l-footer mt-s">
+        <div class="l-footer-section bg-primary py-m">
+            <div class="container px-l d-flex flex-wrap jy-content-between align-items-center">
+                <div class="l-footer-section-title d-flex align-items-center jy-content-center">
+                    <div class="l-footer-section-title__img mr-s"></div>
+                    <p class="text-c-white">訂閱你我的甜蜜郵件</p>
+                </div>
+                <div class="l-footer-section-email d-flex">
+                    <i class="fas fa-envelope input-email-icon text-c-primary p-absolute"></i>
+                    <input type="email" class="py-xs px-l text-c-secondary">
+                    <a class="send bg-secondary text-c-primary d-flex align-items-center jy-content-center" href="#">
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="l-footer-section bg-thirdary py-m">
+            <div class="container px-l d-flex flex-wrap jy-content-between">
+                <div class="l-footer-section-info">
+                    <div class="l-footer-section-info__img mr-s"></div>
+                    <div class="l-footer-section-info__concat mt-xl">
+                        <p class="text-c-primary">07-1234-5467</p>
+                        <p class="text-c-primary">sweetaste@email</p>
+                        <p class="text-c-primary">800 高雄市新興區幸福路 520 號</p>
+                    </div>
+                    <div class="l-footer-section-info__icon mt-m">
+                        <i class="fab fa-instagram-square text-c-primary link-pointer mr-xxs"></i>
+                        <i class="fab fa-facebook-square text-c-primary link-pointer"></i>
+                    </div>
+                </div>
+                <div class="l-footer-section-copyright d-flex flex-dir-col jy-content-between">
+                    <div class="l-footer-section-copyright__img align-self-end"></div>
+                    <p class="text-left text-c-primary align-self-center">© 2018 Sweetaste* All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/all.js"></script>
+    <script>
+        let stepBtn = document.querySelector('.js-step');
+        let stepGroup = document.querySelector('.step-group');
+        let stepItem = document.querySelectorAll('.step-item');
+        let firstForm = document.querySelector('.js-first-form');
+        let secondForm = document.querySelector('.js-second-form');
+        let thirdForm = document.querySelector('.js-third-form');
+        let recepitBtn = document.querySelectorAll('.section-check-receipt-item');
+        let recepitEle = document.querySelector('.js-recepit-ele');
+        let recepitMail = document.querySelector('.js-recepit-mail');
+        let stepCount = 0;
+        let recepitFlag = false;
+        stepItem[stepCount].className = 'step-item__active'
+
+        stepBtn.addEventListener('click', stepHandler);
+        recepitBtn.forEach(item => {
+            item.addEventListener('click', function(e){
+                lastClass = e.target.classList.length - 1;
+                if(e.target.classList[lastClass] === 'active') return;
+                if(recepitFlag === true){
+                    recepitBtn[0].classList.add('active');
+                    recepitBtn[1].classList.remove('active');
+                    recepitEle.style = 'display: flex';
+                    recepitMail.style = 'display: none';
+                    recepitFlag = !recepitFlag;
+                }else{
+                    recepitBtn[1].classList.add('active');
+                    recepitBtn[0].classList.remove('active');
+                    recepitEle.style = 'display: none';
+                    recepitMail.style = 'display: flex';
+                    recepitFlag = !recepitFlag;
+                }
+                
+            })
+        })
+
+
+
+
+        function stepHandler(e){
+            e.preventDefault();
+
+            if(stepCount <= 3){
+                stepItem[stepCount].className = 'step-item__check';
+                stepCount++;
+                if(stepCount == 1){
+                    firstForm.style = 'display:none';
+                    secondForm.style = 'display:block';
+                    stepItem[stepCount].className = 'step-item__active';
+                }else if(stepCount == 2){
+                    secondForm.style = 'display:none';
+                    thirdForm.style = 'display:block';
+                    stepBtn.textContent = '確認結帳'
+                    stepItem[stepCount].className = 'step-item__active';
+                }else if(stepCount == 3){
+                    window.location.href="http://127.0.0.1:5500/checkout-success.html"
+                }
+            }
+        }
+
+
+        
+    </script>
+    
+</body>
+</html>

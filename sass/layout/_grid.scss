@@ -48,6 +48,7 @@ $break-points:(
     .col-#{$i}{
         max-width: 100% * ( $i / $grid-num );
         flex: 0 0 (100% * ( $i / $grid-num ));
+        padding: 0 ($gutter_width / 2);
     }
 };
 

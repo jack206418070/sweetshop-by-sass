@@ -83,5 +83,50 @@
     </div>
 
 
+    <div class="container">
+        <div class="row jy-content-center">
+            <div class="col-md-6">
+                <div class="section-check bg-primary p-m">
+                    <div class="section-check-title d-flex jy-content-between align-items-center">
+                        <p class="f-size-l text-c-white f-w-bold">運送</p>
+                        <div class="step-group d-flex jy-content-between">
+                            <div class="step-item"></div>
+                            <div class="step-item"></div>
+                            <div class="step-item"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn btn-secondary px-m py-s js-step">下一步</div>
+            </div>
+            <div class="col-md-4">
+                <div class="py-m bg-thirdary">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let stepBtn = document.querySelector('.js-step');
+        let stepGroup = document.querySelector('.step-group');
+        let stepItem = document.querySelectorAll('.step-item');
+        let stepCount = 0;
+        stepItem[stepCount].className = 'step-item__active'
+        stepBtn.addEventListener('click', stepHandler);
+
+        function stepHandler(e){
+            e.preventDefault();
+            if(stepCount <= 2){
+                stepItem[stepCount].className = 'step-item__check';
+                stepCount++;
+                if(stepCount > 2) return;
+                stepItem[stepCount].className = 'step-item__active';
+                stepCount === 2 ? stepBtn.textContent = '確認結帳' : 0;
+            }
+        }
+
+
+
+
+    </script>
 </body>
 </html>

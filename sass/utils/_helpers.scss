@@ -87,13 +87,30 @@ $helper-flex:(
     }
 }
 
-.py-7{
-    padding-bottom: 70px;
-    padding-top: 70px;
-}
-.px-3{
-    padding-left: 30px;
-    padding-right: 30px;
+@for $i from 1 through 10{
+    .pt-#{$i}{
+        padding-top: $i * 10 + px;
+    }
+    .pb-#{$i}{
+        padding-bottom: $i * 10 + px;
+    }
+    .pr-#{$i}{
+        padding-right: $i * 10 + px;
+    }
+    .pl-#{$i}{
+        padding-left: $i * 10 + px;
+    }
+    .py-#{$i}{
+        padding-top: $i * 10 + px;
+        padding-bottom: $i * 10 + px;
+    }
+    .px-#{$i}{
+        padding-left: $i * 10 + px;
+        padding-right: $i * 10 + px;
+    }
+    .p-#{$i}{
+        padding: $i * 10 + px;
+    }
 }
 
 
@@ -126,14 +143,18 @@ $helper-flex:(
     }
 }
 
-.flex-dir-col{
-    flex-direction: column;
-}
-
 .flex-wrap{
     flex-wrap: wrap;
 }
 
+
+.flex-dir-row-reverse{
+    flex-direction: row-reverse;
+}
+
+.flex-dir-col{
+    flex-direction: column;
+}
 
 .flex-md-col-reverse{
     @include mobile{
@@ -173,6 +194,12 @@ $helper-flex:(
     &secondary-dark{
         color: darken($f-color-secondary, 10%);
     }
+    &thirdary{
+        color: $thirdary;
+    }
+    &thirdary-dark{
+        color: darken($thirdary, 30%);
+    }
 }
 
 .text-ver-lr{
@@ -201,6 +228,10 @@ $helper-flex:(
     }
 }
 
+.bg-none{
+    background-color: transparent !important;
+}
+
 
 /* border-set */
 
@@ -208,6 +239,21 @@ $helper-flex:(
     border: 1px solid $thirdary;
 }
 
+
+.border-secondary{
+    border: 1px solid $secondary;
+}
+
+.border-thirdary{
+    border: 1px solid $thirdary;
+}
+
+.border-white{
+    border: 1px solid $white;
+}
+.border-white-m{
+    border: 2px solid $white;
+}
 .border-r{
     border-right: 1px solid $thirdary;
 }
@@ -309,4 +355,8 @@ $helper-flex:(
 
 .f-size-l{
     font-size: $font-base * 2;
+}
+
+.f-size-xl{
+    font-size: $font-base * 3;
 }
