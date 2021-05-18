@@ -24,6 +24,7 @@
   margin: 0 auto;
   border: 2px solid #EAF0ED;
   outline: none;
+  -webkit-appearance: none;
 }
 
 .b-login .b-login-input .b-login-input-info .fa-user {

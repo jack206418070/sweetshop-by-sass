@@ -1445,8 +1445,9 @@ a {
 .l-footer .l-footer-section-email input {
   width: 90%;
   font-size: 32px;
-  border: 5px solid #ffffff;
+  border: none;
   border-radius: 5px 0 0 5px;
+  -webkit-appearance: none;
 }
 
 .l-footer .l-footer-section-email input:focus {

@@ -115,15 +115,14 @@ a{
         flex: 0 0 50%;
         position: relative;
         input{
-            -webkit-appearance: none;
             width: 90%;
             font-size: $font-m;
-            border: 5px solid $white;
-            // border: 0;
+            border: none;
             border-radius: 5px 0 0 5px;
             &:focus{
                 outline: none;
             }
+            -webkit-appearance: none;
         }
         .send{
             width: 15%;
