@@ -10,6 +10,18 @@
 /* bg setting */
 /* RWD mixin */
 .banner .banner-img {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 569px) {
+  .banner .banner-img {
+    margin-right: -10px;
+    margin-left: -10px;
+  }
+}
+
+.banner .banner-img {
   background-image: url("https://bit.ly/2Qodh3Z");
   background-size: cover;
   background-repeat: no-repeat;

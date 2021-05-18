@@ -136,6 +136,10 @@
   }
 }
 
+.section .btn {
+  display: block;
+}
+
 .section .btn:hover {
   background-color: #ffd54d;
 }

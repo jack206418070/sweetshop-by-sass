@@ -22,6 +22,8 @@
 .banner-img{
     @include bannerBgSet('https://bit.ly/2P7GhNd');
     height: 460px;
+    margin-right: -10px;
+    margin-left: -10px;
     @include mobile{
         margin-right: -20px;
         margin-left: -20px;

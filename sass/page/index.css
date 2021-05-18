@@ -9,6 +9,18 @@
 /* 圖片取代文字 */
 /* bg setting */
 /* RWD mixin */
+.banner .banner-img {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 569px) {
+  .banner .banner-img {
+    margin-right: -10px;
+    margin-left: -10px;
+  }
+}
+
 .banner .banner-items {
   margin-top: -90px;
 }

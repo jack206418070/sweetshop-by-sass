@@ -3,6 +3,14 @@
 
 .banner{
     .banner-img{
+        margin-right: 10px;
+        margin-left: 10px;
+        @include mobile{
+            margin-right: -10px;
+            margin-left: -10px;
+        }
+    }
+    .banner-img{
         @include bannerBgSet("https://bit.ly/2Qodh3Z");
         height: 500px;
         @include mobile{

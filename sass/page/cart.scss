@@ -91,6 +91,7 @@
         }
     }
     .btn{
+        display: block;
         &:hover{
             background-color: darken($secondary, 10%);
         }
