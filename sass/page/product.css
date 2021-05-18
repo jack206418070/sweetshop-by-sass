@@ -16,8 +16,8 @@
 
 @media screen and (max-width: 569px) {
   .banner .banner-img {
-    margin-right: -10px;
-    margin-left: -10px;
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 
